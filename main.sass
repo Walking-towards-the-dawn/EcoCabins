@@ -1,17 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Rubik:wght@400;500&display=swap')
+
 $primary-color: #222F33
+$second-color: #646D70
+
+*
+  margin: 0
+  padding: 0
+
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
+a
+  text-decoration: none
+  color: inherit
+
+html,
+body
+  font-family: 'Rubik', sans-serif
+  font-size: 0.875rem
+  font-weight: 400
+  height: 100%
+  line-height: 1.3
+  color: $second-color
+
+.section__title
+  font-family: 'Merriweather', serif
+  font-size: 1.875rem
+  font-weight: 900
+
+ul li
+  list-style: none
+
+img
+  vertical-align: top
+
+h1, h2, h3, h4, h5, h6
+  font-weight: inherit
+  font-size: inherit
 
 .wrapper
-	display:flex
-	flex-direction:column
-	min-height:100%
+  display: flex
+  flex-direction: column
+  min-height: 100vh
 
 .container
-  max-width:  838px
+  max-width: 830px
   margin: 0 auto
-  padding: 0 15px
+  padding: 0 10px
 
-.main
-  flex-grow: 1
+/* Header */
+.header
+  background-color: $primary-color
+
+.header__inner
+  display: flex
+  padding-top: 46px
+  align-items: center
+  justify-content: space-between
 
 .menu
+  display: flex
+  gap: 42px
+  font-size: 0.75rem
+  font-weight: 500
+
+.menu__list
+  color: #fff
+  display: flex
+  justify-content: space-between
+  align-items: center
+  display: flex
+  gap: 40px
+
+.materials__btn,
+.menu__btn
+  padding: 10px 20px
+  border-radius: 4px
+  background: #fff
+  color: $second-color
+  font-size: 12px
+  font-weight: 500
+  font-family: 'Rubik', sans-serif
+
+/* Main */
+.main
+  flex: 1
+
+.top
+  margin: 115px 0 196px
+
+.top__text
+  margin-bottom: 12px
+  font-size: 1rem
+  font-weight: 500
+  opacity: 0.8
+
+.title
+  max-width: 440px
+  font-size: 1.875rem
+  font-weight: 900
+
+.materials
+  padding: 60px 0
+  margin-bottom: 58px
+
+.materials__text
+  margin: 12px 0
+  max-width: 400px
+  line-height: 1.8
+  color: $second-color
+
+.materials__btn
+  padding: 10px 15px
+  border: 1px solid $second-color
+
+/* Footer */
+.footer
+  margin-top: 56px
   background-color: $primary-color
+
+.footer__inner
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 32px 0
+  color: #fff
+  font-size: 0.75rem
+  font-weight: 500
+
+.footer__email
+  opacity: .6
+
+.copy__nav-list
+  opacity: .6
+  display: flex
+  gap: 30px
