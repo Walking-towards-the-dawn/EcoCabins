@@ -12,62 +12,71 @@
 
 <body>
   <div class="wrapper">
+
+    <!-- ---------------- Header ---------------- -->
     <header class="header">
-      <div class="container">
-        <div class="header__inner">
+      <div class="header__container">
 
-          <a href="index.html"
-             class="logo">
-            <img class="logo__img"
-                 src="img/logo.svg"
-                 alt="Logo">
-          </a>
+        <div class="header__logo">
+          <img class="logo__img"
+               src="img/logo.svg"
+               alt="Logo">
+        </div>
 
-          <nav class="menu">
+        <div class="header__body">
+          <nav class="header__menu menu">
             <ul class="menu__list">
-              <li class="menu__list-item">
-                <a class="menu__list-link"
+              <li class="menu__item">
+                <a class="menu__link"
                    href="#">Modellen</a>
               </li>
-
               <li class="
-                   menu__list-item">
-                <a class="menu__list-link"
+                   menu__item">
+                <a class="menu__link"
                    href="#">Kopen</a>
               </li>
-
-              <li class="menu__list-item">
-                <a class="menu__list-link"
+              <li class="menu__item">
+                <a class="menu__link"
                    href="#">Huren</a>
               </li>
-
-              <li class="menu__list-item">
-                <a class="menu__list-link"
+              <li class="menu__item">
+                <a class="menu__link"
                    href="#">Nieuws</a>
               </li>
-
             </ul>
-
-            <a class="menu__btn"
-               href="#">Contact</a>
           </nav>
 
+          <button class="header__button"
+                  type="button">Contact</button>
         </div>
       </div>
     </header>
+    <!-- ---------------- Header ---------------- -->
 
+    <!-- ---------------- Main ---------------- -->
     <main class="main">
-      <section class="top">
-        <div class="container">
-          <p class="top__text">Duurzame tiny huisjes</p>
-          <h1 class="title">Een ecologisch tiny huisje is zoveel mogelijk opgebouwd uit duurzame natuurlijke
-            materialen</h1>
+      <section class="main__section">
+        <div class="main__container">
+
+          <div class="main__section-content">
+            <div class="main__section-label">Duurzame tiny huisjes</->
+              <h1 class="title">Een ecologisch tiny huisje is zoveel mogelijk opgebouwd uit duurzame natuurlijke
+                materialen</h1>
+            </div>
+            <a href="#"
+               class="main-section__video-link">Bekijk de film</a>
+          </div>
+
+          <div class="main__section-img">
+            <img src="img/main/bg.jpg"
+                 alt="Bg">
+          </div>
         </div>
       </section>
-
+      <!-- ---------------- Section ---------------- -->
       <section class="materials">
-        <div class="container">
-          <h2 class="section__title">Duurzame materialen</h2>
+        <div class="materials__container">
+          <h2 class="title title--dark">Duurzame materialen</h2>
           <p class="materials__text">Alle EcoCabins hebben een hoge isolatiewaarde, worden geproduceerd met indien
             mogelijk duurzame en/of natuurlijke
             materialen en hebben als opvallende uiterlijke kenmerk de ‘ronde hoeken’, mogelijk gemaakt door het
@@ -75,26 +84,25 @@
             materiaalgebruik. De voordelen van bouwen met hout zijn legio: hout is licht, flexibel, isoleert goed en
             bouwt snel en
             efficiënt.</p>
-          <a href=""
-             class="materials__btn">Lees meer</a>
+          <button class="materials__button">Lees meer</button>
         </div>
       </section>
-
     </main>
+    <!-- ---------------- Main ---------------- -->
 
+    <!-- ---------------- Footer ---------------- -->
     <footer class="footer">
-      <div class="container">
+      <div class="footer__container">
         <div class="footer__inner">
 
           <a class="footer__email"
              href="mailto:info@eco-cabins.com">info@eco-cabins.com</a>
 
-          <a href="index.html"
-             class="logo">
+          <div class="logo">
             <img class="logo__img"
                  src="img/logo.svg"
                  alt="Logo">
-          </a>
+          </div>
 
           <ul class="copy__nav-list">
             <li class="copy__nav-item">
@@ -111,8 +119,9 @@
         </div>
       </div>
     </footer>
-  </div>
+    <!-- ---------------- Footer ---------------- -->
 
+  </div>
 </body>
 
 </html>
