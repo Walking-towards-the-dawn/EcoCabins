@@ -1,3 +1,4 @@
+@import url('media.css')
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Rubik:wght@400;500&display=swap')
 
 $primary-color: #222F33
@@ -92,7 +93,7 @@ button
   display: flex
   align-items: center
   justify-content: space-between
-  padding: 0.625rem 0
+  padding: 0 0.9375rem
   min-height: 6.5625rem
   gap: 1.25rem
 
@@ -122,24 +123,39 @@ button
 /* ---------- Header ---------- */
 
 /* ---------- Main ---------- */
-.main__section
+.main-section
+  display: flex
   min-height: 100vh
   position: relative
 
-.main__section-label
+.main-section__container
+  padding-top: 5.625rem
+  padding-bottom: 2.5rem
+  position: relative
+  display: grid
+  grid-template-columns: 54.320988% 1fr
+  align-items: center
+  flex: 1 1 auto
+  z-index: 51
+
+.main-section__label
   margin-bottom: 0.75rem
   font-size: 1rem
   font-weight: 500
   opacity: 0.8
+  color: #fff
 
-.main__section-img
+.main-section__video-link
+  justify-self: center
+
+.main-section__img
   position: absolute
   height: 100%
   width: 100%
   top: 0
   left: 0
 
-.main__section-img::before
+.main-section__img::before
   content: ''
   position: absolute
   top: 0
@@ -149,7 +165,7 @@ button
   background-color: rgba(0, 0, 0, 0.5)
   z-index: 50
 
-.main__section-img img
+.main-section__img img
   position: absolute
   height: 100%
   width: 100%
@@ -182,13 +198,16 @@ button
   display: flex
   align-items: center
   justify-content: space-between
-  padding: 32px 0
+  min-height: 6rem
   color: #fff
   font-size: 0.75rem
   font-weight: 500
 
 .footer__email
   opacity: .6
+
+.footer__logo
+  width: 8.4375rem
 
 .copy__nav-list
   opacity: .6

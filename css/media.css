@@ -1,0 +1,24 @@
+@media (max-width: 39.0625em) {
+	.header__container {
+		min-height: 4.375rem;
+	}
+	.header__body {
+		column-gap: 1.25rem;
+	}
+	.header__logo {
+		flex: 0 0 2.0625rem;
+	}
+	.menu__list {
+		column-gap: 20px;
+		font-size: 30px;
+	}
+	.header__button {
+		padding: 0.625rem 0.9375rem;
+	}
+}
+
+@media (max-width: 23.125em) {
+	.header__body {
+		flex: 0 0 2.0625rem;
+	}
+}
