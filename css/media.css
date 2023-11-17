@@ -1,3 +1,22 @@
+@media (min-width: 43.75em) {
+	.main-section__container {
+		grid-template-columns: 54.320988% 1fr;
+	}
+	.main-section__video-link {
+		justify-self: center;
+	}
+}
+
+@media screen and (max-width: 43.75em) {
+	.main-section__container {
+		grid-template-columns: 1fr;
+		align-content: center;
+	}
+	.main-section__video-link {
+		justify-self: left;
+	}
+}
+
 @media (max-width: 39.0625em) {
 	.header__container {
 		min-height: 4.375rem;
@@ -9,8 +28,8 @@
 		flex: 0 0 2.0625rem;
 	}
 	.menu__list {
-		column-gap: 20px;
-		font-size: 30px;
+		column-gap: 1.25rem;
+		font-size: 1.875rem;
 	}
 	.header__button {
 		padding: 0.625rem 0.9375rem;

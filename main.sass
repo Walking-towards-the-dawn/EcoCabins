@@ -72,6 +72,7 @@ button
 .title
   font-family: 'Merriweather', serif
   font-size: 1.875rem
+  line-height: 130%
   color: #fff
 
 .title--dark
@@ -133,20 +134,35 @@ button
   padding-bottom: 2.5rem
   position: relative
   display: grid
-  grid-template-columns: 54.320988% 1fr
   align-items: center
   flex: 1 1 auto
   z-index: 51
+  gap: 1.25rem
 
 .main-section__label
-  margin-bottom: 0.75rem
   font-size: 1rem
   font-weight: 500
   opacity: 0.8
   color: #fff
 
+.main-section__label:not(:last-child)
+  margin-bottom: 0.75rem
+
 .main-section__video-link
-  justify-self: center
+  display: flex
+  align-items: center
+  gap: 0.625rem
+  color: #fff
+  font-size: 0.75rem
+  font-weight: 500
+
+.main-section__video-link::before
+  content: ''
+  width: 2rem
+  height: 2rem
+  flex: 0 0 2rem
+  border-radius: 46%
+  background: url('../img/main/video_btn.svg') 0 0 no-repeat
 
 .main-section__img
   position: absolute
@@ -178,14 +194,14 @@ button
   margin-bottom: 3.625rem
 
 .materials__text
-  margin: 12px 0
-  max-width: 400px
+  margin: 0.75rem 0
+  max-width: 25rem
   line-height: 1.8
   color: $second-color
 
 .materials__btn
   display: inline-block
-  padding: 10px 15px
+  padding: 0.625rem 0.9375rem
   border: 1px solid $second-color
 /* ---------- Main ----------*/
 
@@ -212,5 +228,5 @@ button
 .copy__nav-list
   opacity: .6
   display: flex
-  gap: 30px
+  gap: 1.875rem
 /* ---------- Footer ---------- */
