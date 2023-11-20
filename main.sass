@@ -71,7 +71,6 @@ button
 
 .title
   font-family: 'Merriweather', serif
-  font-size: 1.875rem
   line-height: 130%
   color: #fff
 
@@ -193,30 +192,9 @@ button
 
 .materials
   position: relative
-.materials::before
-  content: ''
-  position: absolute
-  top: 0
-  left: 0
-  height: 38px
-  background-color: #fff
-  width: 616px
-  z-index: 56
-  transform: translate(0, -99%)
-
-.materials::after
-  content: ''
-  position: absolute
-  bottom: 0
-  right: 0
-  height: 8.625rem
-  background-color: $primary-color
-  width: 38.4% // 384/1000
 
 .materials__container
   position: relative
-  display: grid
-  grid-template-columns: 50% 20.3125rem
   gap: 1.25rem
   min-width: 0
   align-items: start
@@ -227,12 +205,6 @@ button
   display: grid
   justify-items: start
   gap: 0.875rem
-  padding-top: 1.5625rem
-
-.materials__text
-  max-width: 25rem
-  line-height: 1.9
-  color: $second-color
 
 .materials__more-link
   display: inline-block
@@ -242,12 +214,6 @@ button
   border-radius: 0.25rem
   border: 1px solid $second-color
   cursor: pointer
-
-.swiper
-  max-width: 20.3125rem
-  height: 22.875rem
-  transform: translate(0, -20.765027%)
-  z-index: 60
 
 .materials__slider-slide
   position: relative
@@ -271,7 +237,7 @@ button
 
 /* -------------------- */
 
-.innovatie
+.innovation
   padding: 200px 0
   background-color: $primary-color
 
