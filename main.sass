@@ -111,6 +111,7 @@ button
   color: #fff
   font-size: 0.75rem
   font-weight: 500
+  justify-content: flex-end
 
 .menu__link:hover
   color: $primary-color
@@ -206,6 +207,9 @@ button
   justify-items: start
   gap: 0.875rem
 
+.materials__text
+  line-height: 185.714%
+
 .materials__more-link
   display: inline-block
   padding: 0.625rem 0.9375rem
@@ -238,21 +242,52 @@ button
 /* -------------------- */
 
 .innovation
-  padding: 200px 0
   background-color: $primary-color
+
+.innovation__title:not(:last-child)
+  margin-bottom: 0.5rem
+
+.innovation__text
+  display: flex
+  color: #fff
+  line-height: 171.429%
+  opacity: .8
+
+/* -------------------- */
+
+.info__container
+  display: grid
+
+.info__content
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+
+.info__img img
+  max-width: 100%
+
+.info__title
+  font-family: Merriweather
+  font-size: 1.125rem
+  color: $primary-color
+
+.info__title:not(:last-child)
+  margin-bottom: 0.25rem
+
+.info__text
+  font-size: 0.75rem
+  font-weight: 400
+  line-height: 183.333%
 
 /* ---------- Main ----------*/
 
 /* ---------- Footer ---------- */
 .footer
-  margin-top: 3.5rem
   background-color: $primary-color
 
 .footer__inner
   display: flex
   align-items: center
   justify-content: space-between
-  min-height: 6rem
   color: #fff
   font-size: 0.75rem
   font-weight: 500
